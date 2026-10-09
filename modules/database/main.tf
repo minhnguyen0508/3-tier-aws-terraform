@@ -32,7 +32,7 @@ resource "aws_db_instance" "main" {
   publicly_accessible    = false
 
   multi_az                = var.multi_az
-  backup_retention_period = 7 # lower to 1 if your account rejects 7
+  backup_retention_period = 1 # lower to 1 if your account rejects 7
   backup_window           = "03:00-04:00"
 
   skip_final_snapshot = true # lab only
